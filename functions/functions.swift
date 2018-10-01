@@ -24,7 +24,7 @@ simplePrintNew(firstname: "francisco", surname: "albert") // francisco albert
 
 
 //
-// Functinos returning values
+// Functinos returning values or Void
 //
 func justPrint(name: String, surname: String) -> Void {
     print(name + " " + surname)
@@ -41,7 +41,7 @@ print(totalSum(x: 7, y: 10)) // 17
 
 
 //
-// Overloading
+// Overloading: functions with same arguments, but different type are different functions
 //
 func printText(_ a: Int, _ b: Int) {
     print(a+b)
@@ -55,7 +55,7 @@ printText("hi", "bye") // hi bye
 
 
 //
-// Default values
+// Default values arguments
 //
 func sumAgain(_ x: Int, _ y: Int = 8) {
     print (x + y)

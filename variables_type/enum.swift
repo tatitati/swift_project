@@ -1,4 +1,4 @@
-enum Season {
+enum Season : String {
     case winter
     case summer
     case autumn
@@ -17,3 +17,26 @@ func diplaySeason(selectedSeason: Season) {
 }
 diplaySeason(selectedSeason: Season.autumn) // autumn
 diplaySeason(selectedSeason: .autumn) // autumn
+
+
+
+//
+// Values attached to each case are named "raw values"
+//
+enum Score: Int {
+    case madrid = 32
+    case barcelona = 22
+    case alicante = 12
+}
+print(Score.madrid)  // madrid
+print(Score.madrid.rawValue) // 32 
+
+
+
+enum Cities: String {
+    case madrid = "Maaadrid"
+    case barcelona = "Baaarcelona"
+    case alicante = "Aaaaaalicante"
+}
+print(Cities.madrid)  // madrid
+print(Cities.madrid.rawValue) // Maaadrid 

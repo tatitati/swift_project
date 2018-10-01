@@ -24,7 +24,7 @@ simplePrintNew(firstname: "francisco", surname: "albert") // francisco albert
 
 
 //
-// Functinos returning values or Void
+// Functions returning values or Void
 //
 func justPrint(name: String, surname: String) -> Void {
     print(name + " " + surname)

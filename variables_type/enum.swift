@@ -1,4 +1,4 @@
-enum Season : String {
+enum Season {
     case winter
     case summer
     case autumn
@@ -21,7 +21,7 @@ diplaySeason(selectedSeason: .autumn) // autumn
 
 
 //
-// Values attached to each case are named "raw values"
+// Values attached to each case are named "raw values". The Int or String describes the type of the RawValue
 //
 enum Score: Int {
     case madrid = 32

@@ -32,11 +32,17 @@ print(Score.madrid)  // madrid
 print(Score.madrid.rawValue) // 32 
 
 
-
-enum Cities: String {
-    case madrid = "Maaadrid"
-    case barcelona = "Baaarcelona"
-    case alicante = "Aaaaaalicante"
+//
+// Functions in enums
+//
+enum SeasonAgain {
+    case winter
+    case summer
+    case autumn
+    case spring
+    func display(x: String) {
+        print(self)
+        print(x)
+    }
 }
-print(Cities.madrid)  // madrid
-print(Cities.madrid.rawValue) // Maaadrid 
+SeasonAgain.spring.display(x: "whaaaaaat") // spring // whaaaaaaat

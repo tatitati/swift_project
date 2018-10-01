@@ -7,7 +7,6 @@ enum Season {
 print(Season.spring) // spring
 
 
-
 var myseason : Season = .summer
 print(myseason) // summer
 
@@ -16,7 +15,7 @@ func diplaySeason(selectedSeason: Season) {
     print(selectedSeason)
 }
 diplaySeason(selectedSeason: Season.autumn) // autumn
-diplaySeason(selectedSeason: .autumn) // autumn
+diplaySeason(selectedSeason: .autumn) // autumn. We dont need to pass the type as is already indicated in the function signature
 
 
 

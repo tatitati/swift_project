@@ -56,3 +56,34 @@ dog1.setName("lassie")
 print(dog1.name) // lassie
 
 
+//
+// like classes structs can have custom initializers
+//
+struct Monster {
+    var medium: String
+    var season: String
+
+    init() {
+        self.medium = "any medium"
+        self.season = "winter"
+    }
+
+    init(newMedium: String) {
+        self.medium = newMedium
+        self.season = "summer"
+    }
+
+    init(newSeason: String) {
+        self.medium = "default medium"
+        self.season = newSeason
+    }
+}
+
+var monster1 = Monster()
+print(monster1.medium) // any medium
+var monster2 = Monster(newMedium: "africa")
+print(monster2.medium) // africa
+print(monster2.season) // summer
+var monster3 = Monster(newSeason: "spring")
+print(monster3.season) // spring
+

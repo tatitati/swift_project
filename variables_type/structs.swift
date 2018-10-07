@@ -49,6 +49,8 @@ dog1.setName("lassie")
 print(dog1.name) // lassie
 
 
+
+
 //
 // like classes structs can have custom initializers
 //

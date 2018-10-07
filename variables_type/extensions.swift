@@ -38,5 +38,5 @@ class European: Person {
 }
 
 var european1 = European()
-print(european1.getFirstName())
-print(european1.sayHello())
+print(european1.getFirstName()) // Francisco.  [defined (but not implemented) in protocol]
+print(european1.sayHello()) // Hello!. [defined in extension]

@@ -18,7 +18,7 @@ dog1.speak() // any noise
 
 
 //
-// override methdos
+// override methods
 //
 class Bird: Animal {
     override func speak() {

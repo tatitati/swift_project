@@ -41,12 +41,17 @@ struct Dog {
     mutating func setName(_ newname: String) -> Void {
         self.name = newname
     }
+
+    func setBrand(_ newBrand: String) -> Void { // this modify the struct, it should be mutating
+        self.brand = newBrand
+    }
 }
 
 var dog1 = Dog(name: "tobby", brand: "doberman")
 print(dog1.name) // tobby
 dog1.setName("lassie")
 print(dog1.name) // lassie
+dog1.setBrand("lassie") // error: cannot assign to property: 'self' is immutable
 
 
 //

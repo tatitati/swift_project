@@ -81,3 +81,20 @@ print(monster2.medium) // africa
 print(monster2.season) // summer
 var monster3 = Monster(newSeason: "spring")
 print(monster3.season) // spring
+
+
+//
+// They can implement a protocol, but they cannot inherit from another class
+//
+protocol Animal {
+    func speak(message: String) -> String
+}
+
+struct Spider: Animal {
+    func speak(message: String) -> String {
+        return message
+    }
+}
+
+var spider1 = Spider()
+print(spider1.speak(message: "weeeeee")) // weeeeee

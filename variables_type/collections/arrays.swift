@@ -12,6 +12,4 @@ assert(numbers2 == [2323, 987])
 // favourite way
 var numbers3: [Int] = [5555, 7777]
 assert(numbers3 == [5555, 7777])
-
-
 assert(numbers3[1] == 7777)

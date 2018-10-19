@@ -1,4 +1,4 @@
-import Foundation
+import Foundation // Dates is defined in this package (this is easy to see if you check "go to declaration" in XCode)
 
 let now = Date()
 let formatter = DateFormatter()

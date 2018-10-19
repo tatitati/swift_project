@@ -3,7 +3,7 @@ import Foundation // Dates is defined in this package (this is easy to see if yo
 let now = Date()
 let formatter = DateFormatter()
 
-formatter.dateStyle = .short
+formatter.dateStyle = .short // short is an enum
 formatter.timeStyle = .medium
 
 let dateStr = formatter.string(from: now)
